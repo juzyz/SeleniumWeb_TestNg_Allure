@@ -38,5 +38,10 @@ public class CarListingPage extends BasePage {
         return this;
     }
 
+//    public CarListingPage returnFailedStatus () {
+//        Assert.assertEquals(2, 1);
+////        Assert.fail("This TC is used to check behavior on failure.");
+//        return this;
+//    }
 
 }

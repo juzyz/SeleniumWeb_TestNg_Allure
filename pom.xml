@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>4.9.1</selenium.version>
         <allure-testing.version>2.22.2</allure-testing.version>
-        <aspectj.version>1.8.10</aspectj.version>
+        <aspectj.version>1.9.6</aspectj.version>
         <suiteXml>testing.xml</suiteXml>
     </properties>
 
@@ -40,8 +40,10 @@
             <version>5.2.4</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
+            <!--Plugin to execute the auto tests of an application -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -62,6 +64,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
+            <!-- Plugin to provide detailed allur reports -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
