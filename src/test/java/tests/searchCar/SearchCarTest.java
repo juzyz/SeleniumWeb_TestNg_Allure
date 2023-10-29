@@ -4,6 +4,7 @@ import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
  import static constants.Constant.Urls.CAR_PAGES;
+import static constants.Constant.Urls.CAR_DEFAULT_SEARCH;
 
 public class SearchCarTest extends BaseTest {
     @Epic("Search car functionality")
