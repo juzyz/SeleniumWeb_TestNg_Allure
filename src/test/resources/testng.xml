@@ -4,7 +4,7 @@
     <test name="C:/Users/Julia/IdeaProjects/SeleniumWeb_TestNg_Allure">
         <classes>
             <class name="tests.searchCar.SearchCarTest"></class>
-         <!--   <class name="tests.calculatePayment.CalculatePaymentTest"></class> -->
+            <class name="tests.calculatePayment.CalculatePaymentTest"></class>
         </classes>
     </test>
     <listeners>

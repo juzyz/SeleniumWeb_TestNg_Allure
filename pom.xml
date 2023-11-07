@@ -15,7 +15,7 @@
         <selenium.version>4.9.1</selenium.version>
         <allure-testing.version>2.22.2</allure-testing.version>
         <aspectj.version>1.9.6</aspectj.version>
-        <suiteXml>testing.xml</suiteXml>
+        <suiteXml>testng.xml</suiteXml>
     </properties>
 
     <dependencies>
