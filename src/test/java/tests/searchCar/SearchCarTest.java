@@ -11,7 +11,8 @@ public class SearchCarTest extends BaseTest {
     @Story("Page setting")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Find cars and check the maximum number of cards displayed on a page",
-            priority = 1)
+            priority = 1,
+            dependsOnMethods = {"checkMaxPriceOfFilteredCar"})
     public void checkMaxCarNumberOnPage() {
         basePage.open(CAR_PAGES);
         carHomePage
