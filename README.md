@@ -40,4 +40,5 @@ Allure is a top-notch test report framework, known for its excellent support acr
 
 A sample of the Allure report:
 
+![allure_report](https://github.com/juzyz/SeleniumWeb_TestNg_Allure/assets/96008515/3c01f5a0-d0df-4d4e-b1e0-82ceb0615cbf)
 
