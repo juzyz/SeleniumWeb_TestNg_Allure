@@ -25,7 +25,7 @@ public class CarHomePage extends BasePage {
     private final By maxPriceItems= By.cssSelector("select#price_amount_end option");
 
     /* Find button*/
-    private final By findBtn = By.xpath("//*[@id=\"js-search-form\"]/div[3]/button");
+    private final By findBtn = By.xpath("//*[@id=\"js-search-form\"]/*/div[4]/button");
 
     public CarHomePage enterCarBrandToSearch (String carBrand) {
         driver.findElements(brandList)

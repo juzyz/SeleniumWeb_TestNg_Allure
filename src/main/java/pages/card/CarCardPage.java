@@ -15,7 +15,7 @@ public class CarCardPage extends BasePage {
     private final By vinTag = By.cssSelector(".vhcl-info__moreDetails.push--top ul li:nth-of-type(3)");
     private final By calculatePaymentsLink = By.cssSelector("a#js-payment-calc-button");
     private final By calculateButton = By.cssSelector("#js-payment-calc button");
-    private final By calculatePaymentsForm = By. cssSelector(".modal-wrapper.is-active");
+    private final By calculatePaymentsForm = By. cssSelector("#vhcl-info");
 
     public CarCardPage checkVinTagValueExistence () {
         waitLocatedElementIsPresent(vinTag);
@@ -31,7 +31,7 @@ public class CarCardPage extends BasePage {
     public CarCardPage checkCalculatePaymentsFormIsOpened() {
         WebElement paymentForm = waitLocatedElementIsVisible(calculatePaymentsForm);
         waitLocatedElementIsVisible(calculateButton);
-        Assert.assertEquals(paymentForm.getAttribute("style"), "opacity: 1;");
+        Assert.assertTrue(paymentForm.isEnabled());
         return this;
     }
 }

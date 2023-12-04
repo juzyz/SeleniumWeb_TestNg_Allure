@@ -12,13 +12,13 @@ public class CarListingPage extends BasePage {
         super(driver);
     }
 
-    private final By card = By.cssSelector(".media.soft.push-none.rule");
+    private final By card = By.cssSelector(".t-flex.t-gap-6.t-items-start.t-p-6");
     private final By priceTag = By.cssSelector(".l-column.l-column--medium-4.push-none strong.delta");
-    private final By firstCarCardLink = By.cssSelector("div.media.soft.push-none.rule hgroup.push-half--bottom a");
+   private final By firstCarCardLink = By.cssSelector("h4.hN > a");
 
 
     public CarListingPage checkCardsCount() {
-        Assert.assertEquals(driver.findElements(card).size(), 49);
+        Assert.assertEquals(driver.findElements(card).size(), 50);
         return this;
     }
 

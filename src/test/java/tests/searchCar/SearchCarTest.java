@@ -4,7 +4,6 @@ import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
  import static constants.Constant.Urls.CAR_PAGES;
-import static constants.Constant.Urls.CAR_DEFAULT_SEARCH;
 
 public class SearchCarTest extends BaseTest {
     @Epic("Search car functionality")
@@ -12,8 +11,8 @@ public class SearchCarTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Find cars and check the maximum number of cards displayed on a page",
             priority = 1,
-            dependsOnMethods = {"checkMaxPriceOfFilteredCar"})
-    public void checkMaxCarNumberOnPage() {
+            dependsOnMethods = {"maxPriceOfFilteredCarsShouldNotBeMoreThenSetPrice"})
+    public void maxCarNumberOnPageShouldBeFifty() {
         basePage.open(CAR_PAGES);
         carHomePage
                 .enterCarBrandToSearch("Ford")
@@ -27,7 +26,7 @@ public class SearchCarTest extends BaseTest {
     @Story("Page filtering")
     @Test (description = "Check that filtered cars have price not higher that set one",
             priority = 0)
-    public void checkMaxPriceOfFilteredCar() {
+    public void maxPriceOfFilteredCarsShouldNotBeMoreThenSetPrice() {
         String maxPrice = "30000";
         basePage.open(CAR_PAGES);
         carHomePage
