@@ -14,7 +14,7 @@ public class CalculatePaymentTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Page settings")
     @Test (description = "Check opening modal form")
-    public void openCalculatePaymentForm (){
+    public void calculatePaymentFormShouldBeOpenedWithoutErrors(){
         basePage.open(CAR_DEFAULT_SEARCH);
         carListingPage.clickCarCardLink();
         carCardPage

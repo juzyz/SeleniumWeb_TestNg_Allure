@@ -11,7 +11,7 @@ public class DataProviderTest {
     @Epic("Data Provider functionality")
     @Severity(SeverityLevel.CRITICAL)
     @Test(dataProvider = "excelData", dataProviderClass = providers.ExcelDataProvider.class)
-    public void checkAllFilters (String brand, String  model, String location, String	minPrice, String	maxPrice) {
+    public void allFiltersShouldBeAccessibleForFilling(String brand, String  model, String location, String	minPrice, String	maxPrice) {
         System.out.println("===Begin of the test===");
         System.out.println("Brand "+ brand);
         System.out.println("Model " + model);
